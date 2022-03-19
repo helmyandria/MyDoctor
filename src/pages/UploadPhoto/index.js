@@ -14,26 +14,29 @@ const UploadPhoto = ({navigation, route}) => {
   const [hasPhoto, setHasPhoto] = useState(false);
   const [photo, setPhoto] = useState(ILNullPhoto);
   const getImage = () => {
-    ImagePicker.launchImageLibrary({}, response => {
-      console.log('hit image upload', response);
-      if (response.didCancel || response.error) {
-        showMessage({
-          message: 'oops, sepertinya anda tidak memilih foto nya?',
-          type: 'default',
-          backgroundColor: colors.error,
-          color: colors.white,
-        });
-      } else {
-        console.log('response getImage : ', response);
-        setPhotoForDB(
-          `data:${response.assets[0].type};base64, ${response.assets[0].uri}`,
-        );
+    ImagePicker.launchImageLibrary(
+      {quality: 0.5, maxWidth: 200, maxHeight: 200},
+      response => {
+        console.log('hit image upload', response);
+        if (response.didCancel || response.error) {
+          showMessage({
+            message: 'oops, sepertinya anda tidak memilih foto nya?',
+            type: 'default',
+            backgroundColor: colors.error,
+            color: colors.white,
+          });
+        } else {
+          console.log('response getImage : ', response);
+          setPhotoForDB(
+            `data:${response.assets[0].type};base64, ${response.assets[0].uri}`,
+          );
 
-        const source = {uri: response.assets[0].uri};
-        setPhoto(source);
-        setHasPhoto(true);
-      }
-    });
+          const source = {uri: response.assets[0].uri};
+          setPhoto(source);
+          setHasPhoto(true);
+        }
+      },
+    );
   };
   const uploadAndContinue = () => {
     Fire.database()
