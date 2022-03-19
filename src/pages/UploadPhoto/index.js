@@ -7,6 +7,7 @@ import {fonts} from '../../utils/fonts';
 import * as ImagePicker from 'react-native-image-picker';
 import {showMessage} from 'react-native-flash-message';
 import {Fire} from '../../config';
+import {storeData} from '../../utils';
 
 const UploadPhoto = ({navigation, route}) => {
   const {fullName, profession, uid} = route.params;
@@ -42,6 +43,11 @@ const UploadPhoto = ({navigation, route}) => {
     Fire.database()
       .ref('users/' + uid + '/')
       .update({photo: photoForDB});
+
+    const data = route.params;
+    data.photo = photoForDB;
+
+    storeData('user', data);
 
     navigation.replace('MainApp');
   };
