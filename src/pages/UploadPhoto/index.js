@@ -29,7 +29,8 @@ const UploadPhoto = ({navigation, route}) => {
         } else {
           console.log('response getImage : ', response);
           setPhotoForDB(
-            `data:${response.assets[0].type};base64, ${response.assets[0].uri}`,
+            // `data:${response.assets[0].type};base64, ${response.assets[0].uri}`,
+            `${response.assets[0].uri}`,
           );
 
           const source = {uri: response.assets[0].uri};

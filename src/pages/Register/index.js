@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {ScrollView, StyleSheet, View} from 'react-native';
 import {Button, Gap, Header, Input, Loading} from '../../components';
-import {getData, storeData, useForm} from '../../utils';
+import {storeData, useForm} from '../../utils';
 import {colors} from '../../utils/colors';
 import {Fire} from '../../config';
 import {showMessage} from 'react-native-flash-message';
