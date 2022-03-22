@@ -17,15 +17,15 @@ const UpdateProfile = ({navigation}) => {
   useEffect(() => {
     getData('user').then(res => {
       const data = res;
-      // data.photo = {uri: res.photo};
+      data.photo = {uri: res.photo};
       setProfile(data);
     });
   }, []);
 
   const update = () => {
     console.log('profile: ', profile);
-    // const data = profile;
-    // data.photo = profile.photo.uri;
+    const data = profile;
+    data.photo = profile.photo.uri;
     Fire.database()
       .ref(`users/${profile.uid}/`)
       .update(profile)

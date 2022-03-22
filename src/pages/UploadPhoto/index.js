@@ -16,7 +16,7 @@ const UploadPhoto = ({navigation, route}) => {
   const [photo, setPhoto] = useState(ILNullPhoto);
   const getImage = () => {
     ImagePicker.launchImageLibrary(
-      {quality: 0.5, maxWidth: 200, maxHeight: 200},
+      {quality: 0.5, maxWidth: 200, maxHeight: 200, includeBase64: true},
       response => {
         console.log('hit image upload', response);
         if (response.didCancel || response.error) {
@@ -29,8 +29,8 @@ const UploadPhoto = ({navigation, route}) => {
         } else {
           console.log('response getImage : ', response);
           setPhotoForDB(
-            // `data:${response.assets[0].type};base64, ${response.assets[0].uri}`,
-            `${response.assets[0].uri}`,
+            `data:${response.assets[0].type};base64, ${response.assets[0].base64}`,
+            // `${response.assets[0].uri}`,
           );
 
           const source = {uri: response.assets[0].uri};
