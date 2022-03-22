@@ -30,6 +30,47 @@ const UpdateProfile = ({navigation}) => {
     console.log('profile: ', profile);
     const data = profile;
     data.photo = photoForDB;
+
+    console.log('new password', password);
+
+    if (password.length > 0) {
+      if (password.length < 6) {
+        showMessage({
+          message: 'Password kurang dari 6 karakter',
+          type: 'default',
+          backgroundColor: colors.error,
+          color: 'white',
+        });
+      } else {
+        updatePassword();
+        updateProfileData();
+        navigation.replace('MainApp');
+      }
+    } else {
+      updateProfileData();
+      navigation.replace('MainApp');
+    }
+  };
+
+  const updatePassword = () => {
+    Fire.auth().onAuthStateChanged(user => {
+      if (user) {
+        // update pass
+        user.updatePassword(password).catch(err => {
+          showMessage({
+            message: err.message,
+            type: 'default',
+            backgroundColor: colors.error,
+            color: 'white',
+          });
+        });
+      }
+    });
+  };
+
+  const updateProfileData = () => {
+    const data = profile;
+    data.photo = photoForDB;
     Fire.database()
       .ref(`users/${profile.uid}/`)
       .update(data)
@@ -101,7 +142,12 @@ const UpdateProfile = ({navigation}) => {
           <Gap height={24} />
           <Input label="Email" value={profile.email} disable />
           <Gap height={24} />
-          <Input label="Password" value={password} />
+          <Input
+            label="Password"
+            secureTextEntry
+            value={password}
+            onChangeText={value => setPassword(value)}
+          />
           <Gap height={40} />
           <Button title="Save Profile" onPress={update} />
         </View>
