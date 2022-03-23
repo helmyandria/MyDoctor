@@ -1,9 +1,8 @@
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StyleSheet, View} from 'react-native';
 import React, {useState, useEffect} from 'react';
 import {Header, Profile, Input, Button, Gap} from '../../components';
-import {colors, getData, storeData} from '../../utils';
+import {colors, getData, showError, storeData} from '../../utils';
 import {Fire} from '../../config';
-import {showMessage} from 'react-native-flash-message';
 import * as ImagePicker from 'react-native-image-picker';
 import {ILNullPhoto} from '../../assets';
 
@@ -35,12 +34,7 @@ const UpdateProfile = ({navigation}) => {
 
     if (password.length > 0) {
       if (password.length < 6) {
-        showMessage({
-          message: 'Password kurang dari 6 karakter',
-          type: 'default',
-          backgroundColor: colors.error,
-          color: 'white',
-        });
+        showError('Password kurang dari 6 karakter');
       } else {
         updatePassword();
         updateProfileData();
@@ -57,12 +51,7 @@ const UpdateProfile = ({navigation}) => {
       if (user) {
         // update pass
         user.updatePassword(password).catch(err => {
-          showMessage({
-            message: err.message,
-            type: 'default',
-            backgroundColor: colors.error,
-            color: 'white',
-          });
+          showError(err.message);
         });
       }
     });
@@ -79,12 +68,7 @@ const UpdateProfile = ({navigation}) => {
         storeData('user', data);
       })
       .catch(err => {
-        showMessage({
-          message: err.message,
-          type: 'default',
-          backgroundColor: colors.error,
-          color: colors.white,
-        });
+        showError(err.message);
       });
   };
 
@@ -102,17 +86,11 @@ const UpdateProfile = ({navigation}) => {
       response => {
         console.log('hit image upload', response);
         if (response.didCancel || response.error) {
-          showMessage({
-            message: 'oops, sepertinya anda tidak memilih foto nya?',
-            type: 'default',
-            backgroundColor: colors.error,
-            color: colors.white,
-          });
+          showError('oops, sepertinya anda tidak memilih foto nya?');
         } else {
           console.log('response getImage : ', response);
           setPhotoForDB(
             `data:${response.assets[0].type};base64, ${response.assets[0].base64}`,
-            // `${response.assets[0].uri}`,
           );
 
           const source = {uri: response.assets[0].uri};

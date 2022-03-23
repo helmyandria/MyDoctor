@@ -13,7 +13,7 @@ const Splash = ({navigation}) => {
       //     console.log('user : ', user);
       //     navigation.replace('MainApp');
       //   } else {
-          navigation.replace('GetStarted');
+      navigation.replace('GetStarted');
       //   }
       // });
     }, 3000);

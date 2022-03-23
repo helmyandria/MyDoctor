@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import {ScrollView, StyleSheet, View} from 'react-native';
 import {Button, Gap, Header, Input, Loading} from '../../components';
-import {storeData, useForm} from '../../utils';
+import {showError, storeData, useForm} from '../../utils';
 import {colors} from '../../utils/colors';
 import {Fire} from '../../config';
-import {showMessage} from 'react-native-flash-message';
 
 const Register = ({navigation}) => {
   const [form, setForm] = useForm({
@@ -16,7 +15,6 @@ const Register = ({navigation}) => {
 
   const [loading, setLoading] = useState();
   const onContinue = () => {
-    console.log(form);
     setLoading(true);
     Fire.auth()
       .createUserWithEmailAndPassword(form.email, form.password)
@@ -41,12 +39,7 @@ const Register = ({navigation}) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         setLoading(false);
-        showMessage({
-          message: errorMessage,
-          type: 'default',
-          backgroundColor: colors.error,
-          color: colors.white,
-        });
+        showError(errorMessage);
         console.log('error: ', error);
       });
   };
