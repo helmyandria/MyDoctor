@@ -6,17 +6,17 @@ import {Fire} from '../../config';
 
 const Splash = ({navigation}) => {
   useEffect(() => {
-    setTimeout(() => {
-      // Fire.auth().onAuthStateChanged(user => {
-      //   if (user) {
-      //     // user login
-      //     console.log('user : ', user);
-      //     navigation.replace('MainApp');
-      //   } else {
-      navigation.replace('GetStarted');
-      //   }
-      // });
-    }, 3000);
+    const unsubsribe = Fire.auth().onAuthStateChanged(user => {
+      setTimeout(() => {
+        if (user) {
+          console.log('user : ', user);
+          navigation.replace('MainApp');
+        } else {
+          navigation.replace('GetStarted');
+        }
+      }, 3000);
+    });
+    return () => unsubsribe();
   }, [navigation]);
 
   return (
