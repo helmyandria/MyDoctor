@@ -55,7 +55,9 @@ const Doctor = ({navigation}) => {
       .then(res => {
         console.log('category doctor: ', res.val());
         if (res.val()) {
-          setCategoryDoctor(res.val());
+          const data = res.val();
+          const filterData = data.filter(el => el != null);
+          setCategoryDoctor(filterData);
         }
       })
       .catch(err => {
@@ -70,7 +72,10 @@ const Doctor = ({navigation}) => {
       .then(res => {
         console.log('data: ', res.val());
         if (res.val()) {
-          setNews(res.val());
+          const data = res.val();
+          const filterData = data.filter(el => el != null);
+          console.log('data news filter: ', filterData);
+          setNews(filterData);
         }
       })
       .catch(err => {
