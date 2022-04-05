@@ -1,13 +1,5 @@
-import {database} from 'firebase';
 import React, {useEffect, useState} from 'react';
 import {StyleSheet, View} from 'react-native';
-import {
-  DummyDoctor4,
-  DummyDoctor5,
-  DummyDoctor6,
-  DummyDoctor7,
-  DummyDoctor8,
-} from '../../assets';
 import {Header, List} from '../../components';
 import {Fire} from '../../config';
 import {colors} from '../../utils';
@@ -56,7 +48,7 @@ const ChooseDoctor = ({navigation, route}) => {
             profile={{uri: doctor.data.photo}}
             name={doctor.data.fullName}
             desc={doctor.data.gender}
-            onPress={() => navigation.navigate('Chatting')}
+            onPress={() => navigation.navigate('DoctorProfile', doctor)}
           />
         );
       })}
