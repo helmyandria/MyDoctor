@@ -1,0 +1,9 @@
+com/mydoctor/MainApplication.java
+ com.mydoctor.MainApplication
+ com.mydoctor.MainApplication$1
+com/mydoctor/BuildConfig.java
+ com.mydoctor.BuildConfig
+com/mydoctor/MainActivity.java
+ com.mydoctor.MainActivity
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
