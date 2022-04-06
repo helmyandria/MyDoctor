@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {DummyDoctor1, DummyDoctor2, DummyDoctor3} from '../../assets';
 import {List} from '../../components';
-import {colors, fonts} from '../../utils';
+import {colors, fonts, getData} from '../../utils';
+import {Fire} from '../../config';
 
 const Messages = ({navigation}) => {
   const [doctors, setDoctors] = useState([
@@ -25,17 +26,51 @@ const Messages = ({navigation}) => {
       desc: 'Oke menurut pak dokter bagaimana unt...',
     },
   ]);
+
+  const [user, setUser] = useState({});
+  const [historyChat, setHistoryChat] = useState([]);
+
+  useEffect(() => {
+    getDataUserFromLocal();
+    const urlHistory = `messages/${user.uid}/`;
+
+    Fire.database()
+      .ref(urlHistory)
+      .on('value', snapshot => {
+        console.log('data history: ', snapshot.val());
+        if (snapshot.val()) {
+          const oldData = snapshot.val();
+          const data = [];
+          Object.keys(oldData).map(key => {
+            data.push({
+              id: key,
+              ...oldData[key],
+              // data: oldData[key],
+            });
+          });
+          console.log('new data history: ', data);
+          setHistoryChat(data);
+        }
+      });
+  }, [user.uid]);
+
+  const getDataUserFromLocal = () => {
+    getData('user').then(res => {
+      console.log('user login: ', res);
+      setUser(res);
+    });
+  };
   return (
     <View style={styles.page}>
       <View style={styles.content}>
         <Text style={styles.title}>Messages</Text>
-        {doctors.map(doctor => {
+        {historyChat.map(chat => {
           return (
             <List
-              key={doctor.id}
-              profile={doctor.profile}
-              name={doctor.name}
-              desc={doctor.desc}
+              key={chat.id}
+              profile={chat.uidPartner}
+              name={chat.uidPartner}
+              desc={chat.lastContentChat}
               onPress={() => navigation.navigate('Chatting')}
             />
           );
