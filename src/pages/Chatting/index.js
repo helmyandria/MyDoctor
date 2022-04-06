@@ -25,7 +25,6 @@ const Chatting = ({navigation, route}) => {
     Fire.database()
       .ref(urlFirebase)
       .on('value', snapshot => {
-        // console.log('data chat: ', snapshot.val());
         if (snapshot.val()) {
           const dataSnapshot = snapshot.val();
           const allDataChat = [];
@@ -72,6 +71,18 @@ const Chatting = ({navigation, route}) => {
     const chatID = `${user.uid}_${dataDoctor.data.uid}`;
 
     const urlFirebase = `chatting/${chatID}/allChat/${setDateChat(today)}`;
+    const urlMessageUser = `messages/${user.uid}/${chatID}`;
+    const urlMessageDoctor = `messages/${dataDoctor.data.uid}/${chatID}`;
+    const dataHistoryChatForUser = {
+      lastContentChat: chatContent,
+      lastChatDate: today.getTime(),
+      uidPartner: dataDoctor.data.uid,
+    };
+    const dataHistoryChatForDoctor = {
+      lastContentChat: chatContent,
+      lastChatDate: today.getTime(),
+      uidPartner: user.uid,
+    };
 
     console.log('data utk di kirim: ', data);
     console.log('url firebase ', urlFirebase);
@@ -81,6 +92,10 @@ const Chatting = ({navigation, route}) => {
       .push(data)
       .then(() => {
         setChatContent('');
+        // set history for user
+        Fire.database().ref(urlMessageUser).set(dataHistoryChatForUser);
+        // set histoty for dataDoctor
+        Fire.database().ref(urlMessageDoctor).set(dataHistoryChatForDoctor);
       })
       .catch(err => {
         showError(err.message);
