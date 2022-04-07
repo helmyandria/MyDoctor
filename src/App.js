@@ -11,7 +11,7 @@ const MainApp = () => {
   const [loading, setLoading] = useState(false);
   const stateGlobal = useSelector(state => state);
   console.log('state global', stateGlobal);
-  LogBox.ignoreLogs(['Setting a timer']);
+  LogBox.ignoreLogs(['@firebase/database']);
   return (
     <>
       <NavigationContainer>
