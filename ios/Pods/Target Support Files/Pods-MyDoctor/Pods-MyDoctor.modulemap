@@ -1,0 +1,6 @@
+module Pods_MyDoctor {
+  umbrella header "Pods-MyDoctor-umbrella.h"
+
+  export *
+  module * { export * }
+}

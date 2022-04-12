@@ -11,7 +11,16 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		7A5E99F7C934F32FCA9626E0 /* libPods-MyDoctor-MyDoctorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CECB5764DEA9CE16F7D877 /* libPods-MyDoctor-MyDoctorTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		BC3226CD2805389F00B9C3E0 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3226C62805389E00B9C3E0 /* Nunito-ExtraBold.ttf */; };
+		BC3226CE2805389F00B9C3E0 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3226C72805389E00B9C3E0 /* Nunito-Light.ttf */; };
+		BC3226CF2805389F00B9C3E0 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3226C82805389E00B9C3E0 /* Nunito-Regular.ttf */; };
+		BC3226D02805389F00B9C3E0 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3226C92805389E00B9C3E0 /* Nunito-SemiBold.ttf */; };
+		BC3226D12805389F00B9C3E0 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3226CA2805389E00B9C3E0 /* Nunito-Bold.ttf */; };
+		BC3226D22805389F00B9C3E0 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3226CB2805389E00B9C3E0 /* Nunito-Black.ttf */; };
+		BC3226D32805389F00B9C3E0 /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3226CC2805389E00B9C3E0 /* Nunito-ExtraLight.ttf */; };
+		C83A07F14A06A705A53A9F38 /* libPods-MyDoctor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 203256F0CE7A22741B4AD8F5 /* libPods-MyDoctor.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +43,21 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MyDoctor/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MyDoctor/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MyDoctor/main.m; sourceTree = "<group>"; };
+		203256F0CE7A22741B4AD8F5 /* libPods-MyDoctor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDoctor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3753AB46DDF7B11624A4B42B /* Pods-MyDoctor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDoctor.release.xcconfig"; path = "Target Support Files/Pods-MyDoctor/Pods-MyDoctor.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MyDoctor/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC3226C62805389E00B9C3E0 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		BC3226C72805389E00B9C3E0 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		BC3226C82805389E00B9C3E0 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		BC3226C92805389E00B9C3E0 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		BC3226CA2805389E00B9C3E0 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		BC3226CB2805389E00B9C3E0 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		BC3226CC2805389E00B9C3E0 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D3CECB5764DEA9CE16F7D877 /* libPods-MyDoctor-MyDoctorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDoctor-MyDoctorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF4BB1D50BB10C2549DD245 /* Pods-MyDoctor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDoctor.debug.xcconfig"; path = "Target Support Files/Pods-MyDoctor/Pods-MyDoctor.debug.xcconfig"; sourceTree = "<group>"; };
+		EC2920BE1819548B24D2BC7E /* Pods-MyDoctor-MyDoctorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDoctor-MyDoctorTests.debug.xcconfig"; path = "Target Support Files/Pods-MyDoctor-MyDoctorTests/Pods-MyDoctor-MyDoctorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F5BF70A57224E09F0BD9D130 /* Pods-MyDoctor-MyDoctorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDoctor-MyDoctorTests.release.xcconfig"; path = "Target Support Files/Pods-MyDoctor-MyDoctorTests/Pods-MyDoctor-MyDoctorTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A5E99F7C934F32FCA9626E0 /* libPods-MyDoctor-MyDoctorTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83A07F14A06A705A53A9F38 /* libPods-MyDoctor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +100,7 @@
 		13B07FAE1A68108700A75B9A /* MyDoctor */ = {
 			isa = PBXGroup;
 			children = (
+				BC3226C52805389E00B9C3E0 /* fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -90,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				203256F0CE7A22741B4AD8F5 /* libPods-MyDoctor.a */,
+				D3CECB5764DEA9CE16F7D877 /* libPods-MyDoctor-MyDoctorTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +136,7 @@
 				00E356EF1AD99517003FC87E /* MyDoctorTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				9CFAB26CBDF30B710364D9A9 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -124,6 +152,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		9CFAB26CBDF30B710364D9A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4BB1D50BB10C2549DD245 /* Pods-MyDoctor.debug.xcconfig */,
+				3753AB46DDF7B11624A4B42B /* Pods-MyDoctor.release.xcconfig */,
+				EC2920BE1819548B24D2BC7E /* Pods-MyDoctor-MyDoctorTests.debug.xcconfig */,
+				F5BF70A57224E09F0BD9D130 /* Pods-MyDoctor-MyDoctorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC3226C52805389E00B9C3E0 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BC3226C62805389E00B9C3E0 /* Nunito-ExtraBold.ttf */,
+				BC3226C72805389E00B9C3E0 /* Nunito-Light.ttf */,
+				BC3226C82805389E00B9C3E0 /* Nunito-Regular.ttf */,
+				BC3226C92805389E00B9C3E0 /* Nunito-SemiBold.ttf */,
+				BC3226CA2805389E00B9C3E0 /* Nunito-Bold.ttf */,
+				BC3226CB2805389E00B9C3E0 /* Nunito-Black.ttf */,
+				BC3226CC2805389E00B9C3E0 /* Nunito-ExtraLight.ttf */,
+			);
+			name = fonts;
+			path = ../../../../Desktop/fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MyDoctorTests" */;
 			buildPhases = (
+				FBF4ED8BD5A1B0FC8031F0A1 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				C8D3FE186B507DAECDB3E321 /* [CP] Embed Pods Frameworks */,
+				D29B132CAB1556A3DD4C1019 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,11 +206,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MyDoctor" */;
 			buildPhases = (
+				DB1BFA3BFD0E22C85EFA6EC0 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				FF137A6A39437ABBCB82F990 /* [CP] Embed Pods Frameworks */,
+				66F23F98F4669083D4F7F14A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,7 +272,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3226D12805389F00B9C3E0 /* Nunito-Bold.ttf in Resources */,
+				BC3226D02805389F00B9C3E0 /* Nunito-SemiBold.ttf in Resources */,
+				BC3226CF2805389F00B9C3E0 /* Nunito-Regular.ttf in Resources */,
+				BC3226D32805389F00B9C3E0 /* Nunito-ExtraLight.ttf in Resources */,
+				BC3226D22805389F00B9C3E0 /* Nunito-Black.ttf in Resources */,
+				BC3226CD2805389F00B9C3E0 /* Nunito-ExtraBold.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				BC3226CE2805389F00B9C3E0 /* Nunito-Light.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +301,101 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
+		66F23F98F4669083D4F7F14A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDoctor/Pods-MyDoctor-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDoctor/Pods-MyDoctor-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDoctor/Pods-MyDoctor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8D3FE186B507DAECDB3E321 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDoctor-MyDoctorTests/Pods-MyDoctor-MyDoctorTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDoctor-MyDoctorTests/Pods-MyDoctor-MyDoctorTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDoctor-MyDoctorTests/Pods-MyDoctor-MyDoctorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D29B132CAB1556A3DD4C1019 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDoctor-MyDoctorTests/Pods-MyDoctor-MyDoctorTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDoctor-MyDoctorTests/Pods-MyDoctor-MyDoctorTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDoctor-MyDoctorTests/Pods-MyDoctor-MyDoctorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB1BFA3BFD0E22C85EFA6EC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDoctor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBF4ED8BD5A1B0FC8031F0A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDoctor-MyDoctorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +413,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF137A6A39437ABBCB82F990 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDoctor/Pods-MyDoctor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDoctor/Pods-MyDoctor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDoctor/Pods-MyDoctor-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -286,6 +465,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC2920BE1819548B24D2BC7E /* Pods-MyDoctor-MyDoctorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -312,6 +492,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5BF70A57224E09F0BD9D130 /* Pods-MyDoctor-MyDoctorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -335,6 +516,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF4BB1D50BB10C2549DD245 /* Pods-MyDoctor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -360,6 +542,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3753AB46DDF7B11624A4B42B /* Pods-MyDoctor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -414,6 +597,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -437,7 +621,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SDKROOT)/usr/lib/swift\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -479,6 +662,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -495,7 +679,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SDKROOT)/usr/lib/swift\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
